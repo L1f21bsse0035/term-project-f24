@@ -132,19 +132,6 @@
     margin-bottom: 20px;
   }
   
-  .cta-btn {
-    background-color: #ffffff; /* White background for CTA */
-    color: #4caf50; /* Green text */
-    padding: 15px 30px;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .cta-btn:hover {
-    background-color: #e1f5e1; /* Light green on hover */
-  }
   
   /* Footer Styling */
   footer {
