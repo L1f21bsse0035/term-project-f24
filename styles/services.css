@@ -1,0 +1,137 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    background-color: #333;
+    color: rgb(243, 229, 229);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .navbar .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar h1 {
+    font-size: 24px;
+  }
+  
+  .navbar .logo {
+    color: rgb(211, 201, 201);
+    text-decoration: none;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-right: 20px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: rgb(240, 223, 223);
+    font-size: 16px;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #ff5722; /* Bright orange */
+    border-radius: 5px;
+  }
+  
+  /* Services Section */
+  .services {
+    background-color: #eae6e6;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 32px;
+    color: #4caf50; /* Green color */
+    margin-bottom: 20px;
+  }
+  
+  .services p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+  }
+  
+  /* Service List Section */
+  .service-list {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+  }
+  
+  .service-item {
+    background-color: rgb(236, 228, 228);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-icon {
+    margin-bottom: 20px;
+  }
+  
+  .service-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  .service-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .service-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #333;
+    color: rgb(241, 229, 229);
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
