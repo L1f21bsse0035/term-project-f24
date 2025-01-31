@@ -1,0 +1,37 @@
+name: wf-cd-development
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  cd-build-development-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+      - name: Build Website
+        run: |
+          npx parcel build "./src/index.html" --dist-dir "./docs" --public-url "./"
+      - name: Disable Jekyll
+        run: echo > ./docs/.nojekyll
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "./docs"
+          name: "development-artifact"
+
+  cd-deploy-development-job:
+    needs: cd-build-development-job
+    permissions:
+      pages: write
+      id-token: write
+    environment: "development-env"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Build Artifacts on GH Pages
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: "development-artifact"
+          token: ${{ github.token }}
