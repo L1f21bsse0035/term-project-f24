@@ -1,0 +1,157 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    background-color: #333;
+    color: rgb(238, 224, 224);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .navbar .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar h1 {
+    font-size: 24px;
+  }
+  
+  .navbar .logo {
+    color: rgb(234, 223, 223);
+    text-decoration: none;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-right: 20px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: rgb(234, 223, 223);
+    font-size: 16px;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #ff5722; /* Bright orange */
+    border-radius: 5px;
+  }
+  
+  /* About Us Section */
+  .about {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 32px;
+    color: #4caf50; /* Green color */
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+  }
+  
+  /* Mission Section */
+  .mission {
+    background-color: #f0f0f0;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .mission h2 {
+    font-size: 32px;
+    color: #4caf50; /* Green color */
+    margin-bottom: 20px;
+  }
+  
+  .mission p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+  }
+  
+  /* Team Section */
+  .team {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .team h2 {
+    font-size: 32px;
+    color: #4caf50; /* Green color */
+    margin-bottom: 40px;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  
+  .team-member {
+    max-width: 250px;
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .team-member h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .team-member p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #333;
+    color: rgb(234, 224, 224);
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
