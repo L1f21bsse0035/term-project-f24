@@ -63,9 +63,6 @@
   
   /* Hero Section */
   .hero {
-    background-image: url('smartwatch-hero.jpg'); /* Background image for the hero section */
-    background-size: cover;
-    background-position: center;
     height: 100vh; /* Full-screen height */
     display: flex;
     justify-content: center;
@@ -73,17 +70,18 @@
     text-align: center;
     color: rgb(41, 122, 51);
     padding: 0 20px;
-  }
-  
-  .hero h1 {
+    background-color: #f0f0f0; /* Optional: Set a solid background color */
+}
+
+.hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
-  }
-  
-  .hero p {
+}
+
+.hero p {
     font-size: 18px;
     margin-bottom: 30px;
-  }
+}
   
   .cta-btn {
     background-color: #ff5722; /* Bright orange */
